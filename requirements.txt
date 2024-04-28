@@ -1,4 +1,5 @@
 docx2pdf
 docx 
-python-docx 
+python-docx
+openpyxl
 pandas 
