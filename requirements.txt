@@ -1,5 +1,3 @@
-pandoc
-pypandoc
 docx 
 python-docx
 openpyxl
