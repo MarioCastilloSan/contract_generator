@@ -1,0 +1,5 @@
+docx2pdf
+os
+docx 
+pandas 
+zipfile 
