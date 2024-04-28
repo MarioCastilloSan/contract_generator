@@ -1,3 +1,4 @@
 docx2pdf
 docx 
+python-docx 
 pandas 
