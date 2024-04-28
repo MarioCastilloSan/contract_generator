@@ -78,7 +78,7 @@ def example_contract(date:str, rol:str, address:str, rut:str, full_name:str, nat
         os.mkdir('PDF')
     end_path=  'PDF/'+ str(full_name) + '.docx'
     document.save(end_path)
-    pypandoc.convert_file(end_path, 'pdf', outputfile=f"{end_path}.pdf", extra_args=['-V', 'geometry:margin=1in'])
+    output = pypandoc.convert_file(end_path, 'pdf', outputfile=f"{end_path}.pdf")
     os.remove(end_path)
     return f'PDF/{full_name}.pdf'
 
