@@ -2,4 +2,5 @@ docx2pdf
 docx 
 python-docx
 openpyxl
-pandas 
+pandas
+os
