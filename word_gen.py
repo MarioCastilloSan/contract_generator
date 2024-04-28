@@ -1,4 +1,4 @@
-from docx2pdf import convert
+import pypandoc
 import os
 from docx import Document
 from docx.shared import  Pt,Cm,Mm
@@ -78,7 +78,7 @@ def example_contract(date:str, rol:str, address:str, rut:str, full_name:str, nat
         os.mkdir('PDF')
     end_path=  'PDF/'+ str(full_name) + '.docx'
     document.save(end_path)
-    convert(end_path, f'PDF/{full_name}.pdf')
+    pypandoc.convert_file(end_path, 'pdf', outputfile=f"{end_path}.pdf", extra_args=['-V', 'geometry:margin=1in'])
     os.remove(end_path)
     return f'PDF/{full_name}.pdf'
 

@@ -1,4 +1,4 @@
-docx2pdf
+pypandoc
 docx 
 python-docx
 openpyxl
