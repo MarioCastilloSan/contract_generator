@@ -1,3 +1,4 @@
+pandoc
 pypandoc
 docx 
 python-docx
