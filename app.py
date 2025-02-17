@@ -40,6 +40,6 @@ def main():
             singular_path_clean(zip_path)  # Limpiar los archivos generados
             multiple_path_clean(paths)
         else:
-            st.error("El inicio del rango debe ser menor que el fin del rango.")
+            st.error("¡El inicio del rango debe ser menor que el fin del rango! .")
 if __name__ == "__main__":
     main()
